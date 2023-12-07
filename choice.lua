@@ -3,14 +3,14 @@ local class = require("libs.middleclass")
 ---@class Choice
 local Choice = class("Choice")
 
-function Choice:initialize(id)
-    self.description = nil ---@type string
-    self.destination = nil ---@type string
-    self.codition = nil
+function Choice:initialize(destination, description, condition)
+    self.destination = destination ---@type string
+    self.description = description ---@type string
+    self.condition = condition
 end
 
 function Choice:hasCondition()
-    return self.codition ~= nil
+    return self.condition ~= nil
 end
 
 function Choice:runCondition()
