@@ -19,12 +19,12 @@ node.header = [[%{magenta}
 ]]
 
 table.insert(node.choices, Choice:new(
-    "liones.start",
-    "Para a praia ensolarada de Liones"
+    "kalandra.start",
+    "Para a praia ensolarada de Kalandra"
 ))
 table.insert(node.choices, Choice:new(
-    "nyx.start",
-    "Para as montanhas geladas de Nyx"
+    "nyff.start",
+    "Para as montanhas geladas de Nyff"
 ))
 
 return node
